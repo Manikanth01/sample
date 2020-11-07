@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/teacher_page.css">
+    <title>Teacher Home Page</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+     
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Section', 'Batch-1', 'Batch-2','Batch-3'],
+          ['C-A',1,2,3],
+          ['C-B',3,2,3],
+          ['C-C',3,3,6]
+      ]);
+
+        var options = {
+          bars: 'horizontal'
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));}   
+    </script>
+</head>
+<body>
+    <header>
+        <div class="start">
+          <button>Log-Out</button>
+        </div>
+        <div class="mid">
+            <h1>Teacher Home Page</h1>
+        </div>
+        <div class="end">
+           <input type="text" placeholder="Search Instructor...">
+        </div>
+    </header>
+    <div class="super">
+    <div class="one">
+      <h2>Section : C-A</h2>
+      <table>
+        <tr>
+            <th>Lab-Batch</th>
+            <th>Instrctor-Name</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>X</td>   
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Y</td>   
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Z</td>   
+        </tr>
+      </table>
+    </div>
+    <div class="two">
+    <h2>Section : C-B</h2>
+      <table>
+        <tr>
+            <th>Lab-Batch</th>
+            <th>Instrctor-Name</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>U</td>   
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>V</td>   
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Z</td>   
+        </tr>
+      </table>
+    </div>
+    <div class="three">
+    <h2>Section : C-C</h2>
+      <table>
+        <tr>
+            <th>Lab-Batch</th>
+            <th>Instrctor-Name</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>R</td>   
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>S</td>   
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>T</td>   
+        </tr>
+      </table>
+    </div>
+    </div>
+    <div class="supra">
+      <div class="pg">
+        <h2 class="cin">Program Chart</h2>
+        <table class="res">
+          <tr>
+            <th>Program No.</th>
+            <th>Program Name</th>
+        </tr>
+          <tr>
+              <td>1</td>
+              <td>nm</td>
+          </tr>
+          <tr>
+              <td>2</td>
+              <td>kj</td>   
+          </tr>
+          <tr>
+              <td>3</td>
+              <td>lk</td>   
+          </tr>
+          <tr>
+              <td>4</td>
+              <td>mj</td>   
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>fg</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>ik</td>
+        </tr>
+        </table>
+    </div>
+    <h2 class="kin">Programs Done By Each Lab-Batch</h2>
+    <div id="barchart_material" style="width:48%; height:450px; display: inline-block; margin-top: 10px;"></div>
+  </div>
+</body>
+</html>

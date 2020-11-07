@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/teach_secA.css">
+    <title>Teacher Home Page</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart1);
+      google.charts.setOnLoadCallback(drawChart2);
+     
+      function drawChart1() {
+        var data = google.visualization.arrayToDataTable([
+          ['Lab-Batch', 'No. of Weeks', 'Programs Done'],
+          ['Batch-1',3,1],
+          ['Batch-2',3,2],
+          ['Batch-3',3,3]
+      ]);
+
+        var options = {
+          bars: 'horizontal'
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));}
+
+        function drawChart2() {
+        var data = google.visualization.arrayToDataTable([
+          ['Lab-Batch', 'No. of Students with Incomplete Work', 'Programs to be Done'],
+          ['Batch-1',3,1],
+          ['Batch-2',5,1],
+          ['Batch-3',6,2]
+      ]);
+
+        var options = {
+          bars: 'horizontal'
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('barchart_matter'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));}
+
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Teacher Home Page</h1>
+        <nav>
+			<a class="sim" href="teacher_page1.html" class = "active">Home</a>
+			<a class="sim active" href="teach_secA.html">Section C-A</a>
+			<a class="sim" href="teach_secB.html">Section C-B</a>
+			<a class="sim" href="login.html" target="_blank">Log-Out</a>
+		</nav>
+    </header>
+    <div class="main">
+        <div class="side">
+            <h2 style="text-align: left; margin-left: 20px;">Notifications</h2>
+            <ol>
+                <li>asdfghjkl</li>
+                <li>xcnvb,kll</li>
+                <li>ndhdteevb</li>
+                <li>akssnssjs</li>
+            </ol>
+        </div>
+        <div class="center">
+            <div class="t1">
+                <h1 style="margin-left: 13.5%; margin-bottom: 0; margin-top: 8%;">Section C-A</h1>
+                <table class="link">
+                  <tr>
+                      <th>Lab-Batch</th>
+                      <th>Instrctor-Name</th>
+                  </tr>
+                  <tr>
+                      <td>1</td>
+                      <td>X</td>   
+                  </tr>
+                  <tr>
+                      <td>2</td>
+                      <td>Y</td>   
+                  </tr>
+                  <tr>
+                      <td>3</td>
+                      <td>Z</td>   
+                  </tr>
+                </table>
+              </div>
+              <div class="t2">
+                <table class="com">
+                  <tr>
+                      <th>Lab-Batch</th>
+                      <th>No. of Weeks</th>
+                      <th>Programs Done</th>
+                  </tr>
+                  <tr>
+                      <td>1</td>
+                      <td>3</td>
+                      <td>1</td>
+                  </tr>
+                  <tr>
+                      <td>2</td>
+                      <td>3</td>
+                      <td>2</td>   
+                  </tr>
+                  <tr>
+                      <td>3</td>
+                      <td>3</td>  
+                      <td>3</td> 
+                  </tr>
+                </table>
+              </div>
+              <div id="barchart_material" style="height: 450px; margin-bottom: 2em;"></div>
+              <div id="barchart_matter" style="height: 450; margin-bottom: 2em;"></div>
+        </div>
+    </div>
+</body>
+</html>
