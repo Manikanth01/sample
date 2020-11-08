@@ -1,0 +1,83 @@
+
+body{
+	margin: 0;
+	padding: 0;
+	background: url('../images/lib.jpg');
+	background-size: cover;
+	font-family: sans-serif;
+}
+.loginBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 500px;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.6);
+}
+h1{
+	margin: 0;
+	padding: 0 0 20px; 
+	color: #00ffff;
+	text-align: center;
+}
+.loginBox p{
+	padding:0;
+	margin: 0;
+	font-weight: bold;
+	color: #fff;
+}
+a{
+    display: inline-block;
+	color: #00FF00;
+	opacity:0.9;
+}
+a:hover{
+	color: #ffa500;
+}
+.create{
+	margin-right: 130px;
+}
+.loginBox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.loginBox input[type="text"],.loginBox input[type="password"]{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+select{
+	height : 25px;
+	font-weight: bold;
+	font-family: Arial;
+}
+.loginBox input[type="submit"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+	margin-top: 20px;
+	background: rgb(255,38,126);
+	cursor: pointer;
+	border-radius: 20px;
+}
+.loginBox input[type="submit"]:hover{
+	background: #efed40;
+	color: #262626;
+}
+::placeholder{
+    color:rgba(255,255,255,0.5);
+}
+@media screen and (max-width: 600px){
+	body{
+		background: #ffffff;
+	}
+}
