@@ -52,10 +52,12 @@ header h1{
 .main{
     display: grid;
     grid-template-columns: 20% 80%;
+    background-image: url('../images/circuit.png');
 }
 .side{
-    background-color: blanchedalmond;
+    background-image:linear-gradient(rgba(158, 247, 247, 0.87),rgba(157, 250, 157, 0.795)) ;
     line-height: 14.2vh;
+    border-right:1px solid black;
 }
 h1{
     text-align: center;
